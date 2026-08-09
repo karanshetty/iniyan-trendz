@@ -1,7 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="14" fill="#0d0d0d"/>
-  <!-- "IT" monogram as plain rects: no font dependency, stays crisp at 16px -->
-  <rect x="13" y="17" width="8" height="30" fill="#f5a524"/>
-  <rect x="27" y="17" width="24" height="8" fill="#f5a524"/>
-  <rect x="35" y="17" width="8" height="30" fill="#f5a524"/>
+  <!-- font-size is set below each word's natural width at textLength=50, so the
+       glyphs get spaced apart rather than squashed together. textLength also
+       pins the width against whichever sans-serif the browser substitutes. -->
+  <g fill="#f5a524" font-family="Arial, Helvetica, sans-serif" font-weight="bold"
+     font-size="12" text-anchor="middle" lengthAdjust="spacingAndGlyphs">
+    <text x="32" y="29" textLength="50">INIYAN</text>
+    <text x="32" y="46" textLength="50">TRENDS</text>
+  </g>
 </svg>
