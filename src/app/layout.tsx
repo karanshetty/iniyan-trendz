@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import { ADDRESS, CATEGORIES, SHOP, WHEN } from "@/lib/content";
 import "./globals.css";
 
 const body = Outfit({ variable: "--font-body", subsets: ["latin"] });
 
+// Built from content.ts so the shop name lives in exactly one place.
+const BLURB = `${ADDRESS}. ${CATEGORIES.join(" · ")}.`;
+
 export const metadata: Metadata = {
-  title: "Iniyan Trends — Grand Opening Invitation",
-  description:
-    "You are invited to the grand opening of Iniyan Trends, Muduchur, Chennai. Men's & Kids Wear, Shoes, Watches.",
+  title: `${SHOP} — Grand Opening Invitation`,
+  description: `You are invited to the grand opening of ${SHOP}. ${WHEN}. ${BLURB}`,
   openGraph: {
-    title: "Iniyan Trends — Grand Opening · 23 Aug 2026",
-    description:
-      "No.158, Swamy Nagar, Muduchur, Chennai - 600048. Men's & Kids Wear, Shoes, Watches.",
+    title: `${SHOP} — Grand Opening`,
+    description: `${WHEN}. ${BLURB}`,
   },
 };
 

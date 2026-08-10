@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import Deco from "@/components/Deco";
 import { CATEGORIES, MAP, SHOP, WHEN } from "@/lib/content";
 
@@ -38,14 +39,11 @@ export default function Hero() {
             <p className="mx-auto mt-3 max-w-xs text-balance text-sm font-bold uppercase tracking-wide text-paper/85 sm:max-w-none sm:text-base">
               {WHEN}
             </p>
-            <a
-              href={MAP}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-7 inline-block rounded-full bg-amber px-6 py-3 text-xs font-bold uppercase tracking-wider text-ink transition-colors hover:bg-red hover:text-paper sm:text-sm"
-            >
-              Get Directions →
-            </a>
+            <div className="mt-7">
+              <Button href={MAP} variant="amber">
+                Get Directions →
+              </Button>
+            </div>
           </div>
         </div>
       </section>

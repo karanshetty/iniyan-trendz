@@ -1,18 +1,23 @@
 // Everything you'll edit lives in this file.
-export const SHOP = "Iniyan Trends";
-export const WHEN = "Sunday, 23 August 2026  |  at 9 AM";
+export const SHOP = "Iniyan Trendz";
+export const WHEN = "Sunday, 23 August 2026  |  at 10 AM";
 /** Same moment as WHEN, in IST. Keep the two in sync. */
-export const OPENING_AT = "2026-08-23T09:00:00+05:30";
+export const OPENING_AT = "2026-08-23T10:00:00+05:30";
 export const ADDRESS = "No.158, Swamy Nagar, Muduchur, Chennai - 600048";
 export const MAP = "https://maps.app.goo.gl/3ecvtZPtp7d1Wa8DA?g_st=aw";
 export const SITE = "https://iniyan-trendz.vercel.app/";
+export const INSTAGRAM =
+  "https://www.instagram.com/iniyan_trendz?igsh=MTh4MWp0bWl1bXEzdg==";
+export const INSTAGRAM_HANDLE = "@iniyan_trendz";
 
 export const CONTACTS = [
-  { name: "Pandiyaraj", phone: "8973128746" },
+  { name: "Pandiyaraj", phone: "8667769525" },
   { name: "Arun Kumar", phone: "9994562414" },
 ];
 
 export const CATEGORIES = ["Men's Wear", "Kids Wear", "Shoes", "Watches"];
+
+export const SERVICES = ["Men's Tailoring", "Women's Tailoring"];
 
 // ponytail: add strings here when the offers are decided; empty renders a teaser instead.
 export const OFFERS: string[] = [];

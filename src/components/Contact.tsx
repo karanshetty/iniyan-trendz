@@ -3,7 +3,7 @@ import { CONTACTS } from "@/lib/content";
 
 export default function Contact() {
   return (
-    <Row n="02" label="Call">
+    <Row n="04" label="Call">
       <div className="flex flex-col gap-3">
         {CONTACTS.map((c) => (
           <a
