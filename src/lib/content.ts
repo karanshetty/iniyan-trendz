@@ -17,7 +17,11 @@ export const CONTACTS = [
 
 export const CATEGORIES = ["Men's Wear", "Kids Wear", "Shoes", "Watches"];
 
-export const SERVICES = ["Men's Tailoring", "Women's Tailoring"];
+export const SERVICES = [
+  "Men's Tailoring",
+  "Women's Tailoring",
+  "All Types of Alteration",
+];
 
 // ponytail: add strings here when the offers are decided; empty renders a teaser instead.
 export const OFFERS: string[] = [];
