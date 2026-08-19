@@ -24,7 +24,10 @@ export const SERVICES = [
 ];
 
 // ponytail: add strings here when the offers are decided; empty renders a teaser instead.
-export const OFFERS: string[] = [];
+export const OFFERS: string[] = [
+  "Purchase above ₹999 — free belt, cap or perfume",
+  "Purchase above ₹1999 — free shoe or watch",
+];
 
 export const SHARE = `https://wa.me/?text=${encodeURIComponent(
   `🎉 You're invited to the Grand Opening of ${SHOP}!\n\n${WHEN}\n${ADDRESS}\n\n${CATEGORIES.join(" · ")}\n\n${SITE}`,
